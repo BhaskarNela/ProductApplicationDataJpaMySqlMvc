@@ -23,10 +23,10 @@ public class ProductController {
 	@RequestMapping("/reg")
 	public String showReg(Model map) {
 		//Form Backing Object
+		//form backing object
 		map.addAttribute("product", new Product());
 		return "Register";
 	}
-	
 	//2. Read Form Data on click submit
 	@RequestMapping(value="/save",method=RequestMethod.POST)
 	public String saveData(
